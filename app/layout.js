@@ -1,6 +1,6 @@
 import { Nunito } from "next/font/google"
 import './globals.css'
-import NavMenu from "./components/NavMenu";
+import NavMenu from "@/app/components/NavMenu";
 
 export const metadata = {
    title: "Mahmud's Blogs",
