@@ -1,0 +1,32 @@
+{
+   "categories": [
+      {
+         "name": ".NET",
+         "slug": "dotnet"
+      },
+      {
+         "name": "Entity Framework",
+         "slug": "entity-framework"
+      },
+      {
+         "name": "Docker",
+         "slug": "docker"
+      },
+      {
+         "name": "React",
+         "slug": "react"
+      },
+      {
+         "name": "Redux",
+         "slug": "redux"
+      },
+      {
+         "name": "Nextjs",
+         "slug": "nextjs"
+      },
+      {
+         "name": "SQL",
+         "slug": "sql"
+      }
+   ]
+}
