@@ -1,7 +1,7 @@
 import data from "@/public/data/data.json"
 import Link from "next/link";
 
-export default async function Categories() {
+export default function Categories() {
    const categories = data.categories;
    return (
       <div>
@@ -10,7 +10,7 @@ export default async function Categories() {
             {
                categories.map((category, index) => {
                   return (
-                     <li key={index}> <Link href={`/categories/${category.slug}`}>{category.name}</Link> </li>
+                     <li key={index}> <Link href={`/categories/${category.category}`}>{category.name}</Link> </li>
                   )
                })
             }

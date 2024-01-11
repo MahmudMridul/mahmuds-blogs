@@ -2,31 +2,49 @@
    "categories": [
       {
          "name": ".NET",
-         "slug": "dotnet"
+         "category": "dotnet"
       },
       {
          "name": "Entity Framework",
-         "slug": "entity-framework"
+         "category": "entity-framework"
       },
       {
          "name": "Docker",
-         "slug": "docker"
+         "category": "docker"
       },
       {
          "name": "React",
-         "slug": "react"
+         "category": "react"
       },
       {
          "name": "Redux",
-         "slug": "redux"
+         "category": "redux"
       },
       {
          "name": "Nextjs",
-         "slug": "nextjs"
+         "category": "nextjs"
       },
       {
          "name": "SQL",
-         "slug": "sql"
+         "category": "sql"
+      }
+   ],
+
+   "blogs": [
+      {
+         "slug": "blog-1",
+         "title": "Blog 1",
+         "description": "Description blog 1"
+      },
+      {
+         "slug": "blog-2",
+         "title": "Blog 2",
+         "description": "Description blog 2"
+      },
+      {
+         "slug": "blog-3",
+         "title": "Blog 3",
+         "description": "Description blog 3"
       }
    ]
 }
