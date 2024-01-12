@@ -21,6 +21,9 @@ export default function RootLayout({ children }) {
                   <NavMenu />
                </div>
 
+               <h1 className="mt-5">{"Mahmud's Blogs"}</h1>
+               <hr></hr>
+
                {children}
             </main>
          </body>
