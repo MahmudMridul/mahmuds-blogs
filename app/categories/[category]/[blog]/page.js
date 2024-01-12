@@ -13,9 +13,9 @@ export default function Blog({ params }) {
    const content = getBlogContent(category, blog);
    console.log(content);
    return (
-      <div>
+      <article>
          <div>{params.blog}</div>
          <Markdown>{content.content}</Markdown>
-      </div>
+      </article>
    )
 }

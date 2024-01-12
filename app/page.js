@@ -1,10 +1,18 @@
-import Image from 'next/image'
+function getAllBlogs() {
+   const folder = `./public/blogs/`;
+   const files = fs.readdirSync(folder);
+   if (files.length === 0) {
+      return [];
+   }
+   const blogs = files.map((file) => file.replace(".md", ""));
+   return blogs;
+}
 
 export default function Home() {
    return (
       <main>
-         <h1>blogs</h1>
          <p> some text here </p>
+
       </main>
    )
 }

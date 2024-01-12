@@ -1,16 +1,25 @@
 import Link from "next/link";
 import fs from "fs";
 
-function getBlogMetaData(category) {
+function getBlogNameList(category) {
    const folder = `./public/blogs/${category}/`;
    const files = fs.readdirSync(folder);
+   if (files.length === 0) {
+      return [];
+   }
    const blogs = files.map((file) => file.replace(".md", ""));
    return blogs;
 }
 
 export default function Category({ params }) {
-   const blogs = getBlogMetaData(params.category);
-   console.log(blogs);
+   const blogs = getBlogNameList(params.category);
+
+   if (blogs.length === 0) {
+      return (
+         <div className="text-2xl text-center font-bold m-6">No posts found.</div>
+      )
+   }
+
    return (
       <div>
          <div className="text-2xl text-center font-bold m-6">{params.category}</div>

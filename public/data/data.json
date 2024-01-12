@@ -5,28 +5,8 @@
          "category": "dotnet"
       },
       {
-         "name": "Entity Framework",
-         "category": "entity-framework"
-      },
-      {
-         "name": "Docker",
-         "category": "docker"
-      },
-      {
          "name": "React",
          "category": "react"
-      },
-      {
-         "name": "Redux",
-         "category": "redux"
-      },
-      {
-         "name": "Nextjs",
-         "category": "nextjs"
-      },
-      {
-         "name": "SQL",
-         "category": "sql"
       }
    ],
 

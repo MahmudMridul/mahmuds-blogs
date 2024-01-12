@@ -5,12 +5,19 @@ export default function Categories() {
    const categories = data.categories;
    return (
       <div>
-         <div className="text-2xl text-center font-bold m-6">Categories</div>
-         <ul className="text-center">
+         <h3 className="mt-6">Categories</h3>
+         <ul className="">
             {
                categories.map((category, index) => {
                   return (
-                     <li key={index}> <Link href={`/categories/${category.category}`}>{category.name}</Link> </li>
+                     <li
+                        className="w-40 h-auto rounded-3xl p-2 hover:text-lg hover:underline"
+                        key={index}
+                     >
+                        <Link href={`/categories/${category.category}`}>
+                           {category.name}
+                        </Link>
+                     </li>
                   )
                })
             }
