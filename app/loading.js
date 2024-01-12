@@ -1,7 +1,7 @@
 import React from 'react'
 
-export default function loading() {
+export default function Loading() {
    return (
-      <div className="text-9xl font-extrabold">loading...</div>
+      <div className="text-7xl text-center font-extrabold">Loading. .. ..</div>
    )
 }
