@@ -1,3 +1,59 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+h1 {
+   font-size: 2.2rem;
+   font-weight: bold;
+}
+
+h2 {
+   font-size: 2rem;
+   font-weight: bold;
+}
+
+h3 {
+   font-size: 1.8rem;
+   font-weight: bold;
+}
+
+h4 {
+   font-size: 1.6rem;
+   font-weight: bold;
+}
+
+h5 {
+   font-size: 1.4rem;
+   font-weight: bold;
+}
+
+h6 {
+   font-size: 1.2rem;
+   font-weight: bold;
+}
+
+p {
+   font-size: 1rem;
+}
+
+strong {
+   font-weight: bold;
+}
+
+blockquote {
+   width: fit-content;
+   height: fit-content;
+   background-color: gainsboro;
+   padding: 20px;
+   border-radius: 10px;
+}
+
+code {
+   width: fit-content;
+   height: fit-content;
+   margin-top: 100px;
+   margin-bottom: 10px;
+   background-color: lightgrey;
+   border-radius: 5px;
+   padding: 10px;
+}
