@@ -16,7 +16,7 @@ export default function RootLayout({ children }) {
    return (
       <html lang="en">
          <body className={`${nunito.className} `}>
-            <main className="container p-3 bg-stone-100">
+            <main className="container p-3 bg-white">
                <div className="flex justify-center">
                   <NavMenu />
                </div>
