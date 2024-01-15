@@ -1,7 +1,17 @@
 import Markdown from "markdown-to-jsx";
 import { getBlogContent } from "@/app/lib/getBlogContent";
+import { getBlogNameList } from "../lib/getBlogNameList";
+
+export function generateStaticParams() {
+   const blogs = getBlogNameList();
+   console.log(blogs);
+   return blogs.map((blog) => ({
+      blog,
+   }))
+}
 
 export default function Blog({ params }) {
+   console.log(params);
    const { blog } = params;
    const obj = getBlogContent(blog);
    const { content, data } = obj;

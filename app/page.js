@@ -1,13 +1,17 @@
-import fs from "fs";
 import Link from "next/link";
-
-import data from "@/public/data/data.json";
 import { getBlogNameList } from "./lib/getBlogNameList";
 import { getBlogInfoFromSlug } from "@/app/lib/getBlogInfoFromSlug";
 
-
-export default function Home() {
+export function generateStaticParams() {
    const blogs = getBlogNameList();
+   console.log(blogs);
+   return blogs.map((blog) => ({
+      blog,
+   }))
+}
+
+export default function Home({ params }) {
+   const blogs = getBlogNameList();;
 
    return (
       <main>
@@ -21,7 +25,7 @@ export default function Home() {
                         key={index}
                      >
                         <Link href={`/${blog}`}>
-                           {blogName}
+                           {blogName} ({date})
                         </Link>
                      </li>
                   )
