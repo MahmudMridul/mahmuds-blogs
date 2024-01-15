@@ -16,7 +16,7 @@ export default function Blog({ params }) {
    const { content, data } = obj;
    return (
       <article>
-         <h1 className="col-span-3">{data.title}</h1>
+         <h1>{data.title}</h1>
          <p>
             <strong> Published: {data.date}</strong>
          </p>

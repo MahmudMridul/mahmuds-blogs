@@ -21,7 +21,7 @@ export default function Home() {
                   const { date, blogName } = getBlogInfoFromSlug(blog);
                   return (
                      <li
-                        className="w-auto h-auto rounded-3xl p-2 hover:text-lg hover:underline"
+                        className="w-auto h-auto rounded-3xl p-2 hover:text-lg hover:underline hover:text-sky-900"
                         key={index}
                      >
                         <Link href={`/${blog}`}>
