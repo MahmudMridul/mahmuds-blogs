@@ -10,7 +10,7 @@ export function generateStaticParams() {
    }))
 }
 
-export default function Home({ params }) {
+export default function Home() {
    const blogs = getBlogNameList();;
 
    return (

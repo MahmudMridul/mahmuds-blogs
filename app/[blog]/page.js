@@ -11,7 +11,6 @@ export function generateStaticParams() {
 }
 
 export default function Blog({ params }) {
-   console.log(params);
    const { blog } = params;
    const obj = getBlogContent(blog);
    const { content, data } = obj;
