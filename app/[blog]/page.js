@@ -2,8 +2,8 @@ import Markdown from "markdown-to-jsx";
 import { getBlogContent } from "@/app/lib/getBlogContent";
 
 export default function Blog({ params }) {
-   const { category, blog } = params;
-   const obj = getBlogContent(category, blog);
+   const { blog } = params;
+   const obj = getBlogContent(blog);
    const { content, data } = obj;
    return (
       <article>

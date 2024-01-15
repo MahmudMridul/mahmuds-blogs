@@ -1,7 +1,7 @@
 import fs from "fs";
 
-export function getBlogNameList(category) {
-   const folder = `./public/blogs/${category}/`;
+export function getBlogNameList() {
+   const folder = `./public/blogs/`;
    const files = fs.readdirSync(folder);
    if (files.length === 0) {
       return [];
