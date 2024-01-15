@@ -1,15 +1,5 @@
 import Link from "next/link";
-import fs from "fs";
-
-function getBlogNameList(category) {
-   const folder = `./public/blogs/${category}/`;
-   const files = fs.readdirSync(folder);
-   if (files.length === 0) {
-      return [];
-   }
-   const blogs = files.map((file) => file.replace(".md", ""));
-   return blogs;
-}
+import { getBlogNameList } from "@/app/lib/getBlogNameList";
 
 export default function Category({ params }) {
    const blogs = getBlogNameList(params.category);
