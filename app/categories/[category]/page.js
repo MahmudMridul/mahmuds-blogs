@@ -16,14 +16,14 @@ export default function Category({ params }) {
 
    if (blogs.length === 0) {
       return (
-         <div className="text-2xl text-center font-bold m-6">No posts found.</div>
+         <div className="text-2xl font-bold m-6">No posts found.</div>
       )
    }
 
    return (
       <div>
-         <div className="text-2xl text-center font-bold m-6">{params.category}</div>
-         <ul className="text-center">
+         <div className="text-2xl font-bold m-6">{params.category}</div>
+         <ul className="">
             {
                blogs.map((blog, index) => {
                   return (

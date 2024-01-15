@@ -1,18 +1,31 @@
-function getAllBlogs() {
-   const folder = `./public/blogs/`;
-   const files = fs.readdirSync(folder);
-   if (files.length === 0) {
-      return [];
-   }
-   const blogs = files.map((file) => file.replace(".md", ""));
-   return blogs;
-}
+import fs from "fs";
+import Link from "next/link";
+
+import data from "@/public/data/data.json";
+
 
 export default function Home() {
+   const categories = data.categories;
+
    return (
       <main>
-         <p> some text here </p>
-
+         <h3 className="mt-6">Categories</h3>
+         <ul className="">
+            {
+               categories.map((category, index) => {
+                  return (
+                     <li
+                        className="w-40 h-auto rounded-3xl p-2 hover:text-lg hover:underline"
+                        key={index}
+                     >
+                        <Link href={`/categories/${category.category}`}>
+                           {category.name}
+                        </Link>
+                     </li>
+                  )
+               })
+            }
+         </ul>
       </main>
    )
 }
