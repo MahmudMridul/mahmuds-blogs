@@ -7,24 +7,10 @@
       {
          "name": "React",
          "category": "react"
-      }
-   ],
-
-   "blogs": [
-      {
-         "slug": "blog-1",
-         "title": "Blog 1",
-         "description": "Description blog 1"
       },
       {
-         "slug": "blog-2",
-         "title": "Blog 2",
-         "description": "Description blog 2"
-      },
-      {
-         "slug": "blog-3",
-         "title": "Blog 3",
-         "description": "Description blog 3"
+         "name": "Batch Script",
+         "category": "batch-script"
       }
    ]
 }

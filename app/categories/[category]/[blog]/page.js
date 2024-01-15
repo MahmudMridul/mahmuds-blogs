@@ -10,12 +10,15 @@ function getBlogContent(category, blog) {
 
 export default function Blog({ params }) {
    const { category, blog } = params;
-   const content = getBlogContent(category, blog);
-   console.log(content);
+   const obj = getBlogContent(category, blog);
+   const { content, data } = obj;
    return (
       <article>
-         <div>{params.blog}</div>
-         <Markdown>{content.content}</Markdown>
+         <div className="grid md:grid-cols-4">
+            <h1 className="col-span-3">{data.title}</h1>
+            <p> <strong>Published:</strong> {data.date}</p>
+         </div>
+         <Markdown>{content}</Markdown>
       </article>
    )
 }
