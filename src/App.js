@@ -1,6 +1,8 @@
 export default function App() {
    return (
-      <h1 className="text-blue-200">App</h1>
+      <main className="p-5">
+         app
+      </main>
    );
 }
 
