@@ -6,6 +6,7 @@ import Link from "next/link";
 export const metadata = {
    title: "Mahmud's Blogs",
    description: "Blogs by Abdullah Al Mahmud",
+   authors: [{ name: "Abdullah Al Mahmud" }]
 }
 
 const nunito = Nunito({

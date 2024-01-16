@@ -2,13 +2,13 @@ import Link from "next/link";
 import { getBlogNameList } from "./lib/getBlogNameList";
 import { getBlogInfoFromSlug } from "@/app/lib/getBlogInfoFromSlug";
 
-export function generateStaticParams() {
-   const blogs = getBlogNameList();
-   console.log(blogs);
-   return blogs.map((blog) => ({
-      blog,
-   }))
-}
+// export function generateStaticParams() {
+//    const blogs = getBlogNameList();
+//    console.log(blogs);
+//    return blogs.map((blog) => ({
+//       blog,
+//    }))
+// }
 
 export default function Home() {
    const blogs = getBlogNameList();;

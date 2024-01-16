@@ -10,6 +10,21 @@ export function generateStaticParams() {
    }))
 }
 
+export function generateMetadata({ params, searchParams }, parent) {
+   const { blog } = params;
+   const obj = getBlogContent(blog);
+   const { content, data } = obj;
+   console.log(data);
+
+   return {
+      title: data.title,
+      description: data.description,
+      keywords: data.keywords,
+      authors: data.authors,
+      category: data.category,
+   };
+}
+
 export default function Blog({ params }) {
    const { blog } = params;
    const obj = getBlogContent(blog);
