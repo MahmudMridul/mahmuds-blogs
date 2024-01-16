@@ -1,6 +1,6 @@
 export default function App() {
    return (
-      <main className="p-5">
+      <main className="container p-3">
          app
       </main>
    );
