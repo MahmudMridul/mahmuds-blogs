@@ -7,6 +7,9 @@ module.exports = {
       container: {
          center: true,
       },
+      fontFamily: {
+         primary: ["'Nunito', sans-serif"]
+      }
    },
    plugins: [],
 }
