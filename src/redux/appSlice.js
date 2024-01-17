@@ -20,22 +20,6 @@ export const getBlogList = createAsyncThunk(
    }
 );
 
-export const searchBlogList = createAsyncThunk(
-   "app/searchBlogList",
-   async (obj, thunkAPI) => {
-      try {
-         const { searchText } = obj;
-         const res = await fetch(`${process.env.PUBLIC_URL}/data/blogInfo.json`);
-         const data = res.json();
-         console.log(data);
-         return data;
-
-      } catch (error) {
-         console.error("getBlogList", error.message);
-      }
-   }
-);
-
 export const appSlice = createSlice({
    name: 'app',
    initialState,
