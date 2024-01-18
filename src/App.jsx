@@ -1,7 +1,7 @@
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Home from "./pages/Home";
 import BlogPost from "./pages/BlogPost";
-import BlogList from "./components/BlogList";
+import BlogList from "./pages/BlogList";
 import { loader as blogLoader } from "./pages/BlogPost";
 
 export default function App() {

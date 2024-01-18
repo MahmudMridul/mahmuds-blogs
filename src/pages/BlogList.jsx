@@ -1,7 +1,8 @@
 import React, { useEffect } from "react";
 import { useDispatch, useSelector } from "react-redux";
 import { getBlogList } from "../redux/appSlice";
-import ListItem from "./ListItem";
+import ListItem from "../components/ListItem";
+import Search from "../components/Search";
 
 export default function BlogList() {
    const dispatch = useDispatch();
@@ -15,10 +16,13 @@ export default function BlogList() {
    }, [blogList]);
 
    return (
-      <ul>
-         {blogList.map((blog, index) => {
-            return <ListItem blog={blog} key={index} />;
-         })}
-      </ul>
+      <div>
+         <Search />
+         <ul>
+            {blogList.map((blog, index) => {
+               return <ListItem blog={blog} key={index} />;
+            })}
+         </ul>
+      </div>
    );
 }
