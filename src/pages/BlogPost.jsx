@@ -1,7 +1,7 @@
-import React from "react";
+import React, { useEffect } from "react";
 import ReactMarkdown from "react-markdown";
-import { getMarkdownFile } from "../lib/utils";
-import { useLoaderData } from "react-router-dom";
+import { getMarkdownFile, setPageInfo } from "../lib/utils";
+import { useLoaderData, useLocation } from "react-router-dom";
 
 export async function loader({ params }) {
    const blog = await getMarkdownFile(
@@ -12,5 +12,12 @@ export async function loader({ params }) {
 
 export default function BlogPost() {
    const { blog } = useLoaderData();
+   const { state } = useLocation();
+
+   useEffect(() => {
+      const { description, keywords, name } = state.info;
+      setPageInfo(name, description, keywords);
+   }, [state.info]);
+
    return <ReactMarkdown children={blog}></ReactMarkdown>;
 }
