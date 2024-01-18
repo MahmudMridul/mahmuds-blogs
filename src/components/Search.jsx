@@ -26,7 +26,7 @@ export default function Search() {
       <div className="flex justify-end m-4 ">
          <input
             type="text"
-            className="border-2 border-slate-300 rounded-md w-96 h-10 font-semibold text-lg"
+            className="border-2 border-slate-300 rounded-md w-96 h-10 font-semibold text-lg p-1"
             placeholder="Search by name or category"
             value={searchText}
             onChange={handleSearch}
